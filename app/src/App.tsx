@@ -6,6 +6,10 @@ import ThemeSwitcher from './components/ThemeSwitcher';
 import DistributionCard from './components/DistributionCard';
 import DistributionModal from './components/DistributionModal';
 import HelpModal from './components/HelpModal';
+import markSvg from './assets/mark.svg';
+import logoCompact from './assets/logo_vertical_compact.svg';
+import logoCompactDark from './assets/logo_vertical_compact_dark.svg';
+import { useTheme } from './context/ThemeContext';
 
 function RustIcon() {
   return (
@@ -21,35 +25,9 @@ function WasmIcon() {
     </svg>
   );
 }
-function ObligaiMark() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="48 20 64 58" role="img" aria-label="ObligaI">
-      <line x1="80" y1="46" x2="80" y2="34" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
-      <line x1="89" y1="61" x2="99" y2="67" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
-      <line x1="71" y1="61" x2="61" y2="67" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
-      <circle cx="80" cy="56" r="10" fill="#B85C3A"/>
-      <circle cx="80" cy="28" r="6" fill="none" stroke="#B85C3A" strokeWidth="3"/>
-      <circle cx="104" cy="70" r="6" fill="none" stroke="#B85C3A" strokeWidth="3"/>
-      <circle cx="56" cy="70" r="6" fill="none" stroke="#B85C3A" strokeWidth="3"/>
-    </svg>
-  );
-}
-function ObligaiLogo() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 124" role="img" aria-label="ObligaI">
-      <line x1="80" y1="46" x2="80" y2="34" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
-      <line x1="89" y1="61" x2="99" y2="67" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
-      <line x1="71" y1="61" x2="61" y2="67" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
-      <circle cx="80" cy="56" r="10" fill="#B85C3A"/>
-      <circle cx="80" cy="28" r="6" fill="none" stroke="#B85C3A" strokeWidth="3"/>
-      <circle cx="104" cy="70" r="6" fill="none" stroke="#B85C3A" strokeWidth="3"/>
-      <circle cx="56" cy="70" r="6" fill="none" stroke="#B85C3A" strokeWidth="3"/>
-      <text x="80" y="108" textAnchor="middle" fontFamily="Inter,-apple-system,Helvetica Neue,Arial,sans-serif" fontWeight="500" fontSize="24" fill="currentColor" letterSpacing="-0.3">Obliga<tspan fontFamily="Georgia,Times New Roman,serif" fontStyle="italic" fill="#B85C3A" dx="-0.04em">I</tspan></text>
-    </svg>
-  );
-}
 
 export default function App() {
+  const { mode } = useTheme();
   const [ready, setReady] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [selected, setSelected] = useState<DistConfig | null>(null);
@@ -71,8 +49,8 @@ export default function App() {
     <div className="app-shell">
       <aside className={`sidebar${sidebarOpen ? ' sidebar--expanded' : ''}`}>
         <div className="sidebar__brand">
-          <ObligaiMark/>
-          <ObligaiLogo/>
+          <img src={markSvg} alt="ObligaI" className="sidebar-brand-mark" />
+          <img src={mode === 'dark' ? logoCompactDark : logoCompact} alt="ObligaI" className="sidebar-brand-logo" />
         </div>
         <div className="sidebar__group">Continuous</div>
         <nav className="sidebar__nav">

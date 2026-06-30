@@ -20,10 +20,12 @@
 /* Loading */
 .loading-screen { min-height:100vh; }
 
-/* Sidebar brand: first SVG = mark, second SVG = logo */
-.sidebar__brand > svg:last-child { display:none; }
-.sidebar--expanded .sidebar__brand > svg:first-child { display:none; }
-.sidebar--expanded .sidebar__brand > svg:last-child { display:block; height:auto; width:var(--logo-sm); }
+/* Sidebar brand: mark when collapsed, compact logo when expanded */
+.sidebar-brand-mark { height:32px; width:auto; }
+.sidebar:not(.sidebar--expanded) .sidebar-brand-mark { height:24px; }
+.sidebar-brand-logo { display:none; height:auto; width:var(--logo-sm); }
+.sidebar--expanded .sidebar-brand-logo { display:block; }
+.sidebar--expanded .sidebar-brand-mark { display:none; }
 .sidebar--expanded .sidebar__brand { height:auto; padding-top:12px; padding-bottom:12px; }
 
 /* Sidebar group labels hidden when collapsed */
