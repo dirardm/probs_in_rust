@@ -44,9 +44,9 @@ export default function DistributionModal({ config, params, onClose, onParamChan
         </div>
         <hr className="divider mt-4 mb-4"/>
         <div className="flex-row flex-center gap-3">
-          <div className="flex-col flex-center"><span className="t-label">Mean</span><span className="t-mono-small t-accent">{result.stats.mean?.toFixed(2) ?? '—'}</span></div>
-          <div className="flex-col flex-center"><span className="t-label">Variance</span><span className="t-mono-small t-accent">{result.stats.variance?.toFixed(2) ?? '—'}</span></div>
-          <div className="flex-col flex-center"><span className="t-label">Skewness</span><span className="t-mono-small t-accent">{result.stats.skewness?.toFixed(2) ?? '—'}</span></div>
+          <div className="flex-col flex-center"><span className="t-label">Mean</span><span className="t-mono-small stat-value">{result.stats.mean?.toFixed(2) ?? '—'}</span></div>
+          <div className="flex-col flex-center"><span className="t-label">Variance</span><span className="t-mono-small stat-value">{result.stats.variance?.toFixed(2) ?? '—'}</span></div>
+          <div className="flex-col flex-center"><span className="t-label">Skewness</span><span className="t-mono-small stat-value">{result.stats.skewness?.toFixed(2) ?? '—'}</span></div>
         </div>
         <button className="btn btn-ghost btn-icon modal__close" onClick={onClose} aria-label="Close">
           <span className="icon"><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></span>

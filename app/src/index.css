@@ -44,6 +44,9 @@
 
 /* Border matches regulation colour on cards and modals */
 [class*="regulation-card--"] { border-color:var(--reg-color,var(--accent-border)) !important; }
+[class*="regulation-card--"] .btn-ghost { background:transparent !important; color:var(--text-muted) !important; }
+[class*="regulation-card--"] .btn-ghost:hover { color:var(--reg-color) !important; background:transparent !important; }
+[class*="regulation-card--"] .btn-ghost:hover .icon { color:var(--reg-color) !important; }
 
 /* Card header alignment */
 .card-header-row { display:flex; align-items:center; gap:var(--space-2); margin-bottom:var(--space-2); }
@@ -56,9 +59,14 @@
 .sidebar__footer .flex-col { align-items:center; }
 .sidebar__footer .flex-row { justify-content:center; }
 .sidebar:not(.sidebar--expanded) .sidebar-footer-text { display:none; }
+.stat-value { color:var(--reg-color,var(--accent)) !important; font-weight:600; }
 .rust-icon > svg { fill:currentColor !important; stroke:none !important; }
 a { color:var(--accent); text-decoration:none; }
 a:hover { color:var(--accent-hover); text-decoration:underline; }
+.btn-ghost { background:transparent !important; box-shadow:none !important; }
+.btn-ghost:hover { background:transparent !important; }
+[data-theme="dark"] .btn-ghost { background:transparent !important; box-shadow:none !important; }
+[data-theme="dark"] .btn-ghost:hover { background:transparent !important; }
 .rust-intro { align-items:center; }
 
 /* Formula */

@@ -54,9 +54,9 @@ export default function DistributionCard({ config, index, onExpand }: Props) {
         </div>
         <hr className="divider"/>
         <div className="flex-row flex-center gap-3 pt-2">
-          <div className="flex-col flex-center"><span className="t-label">Mean</span><span className="t-mono-small t-accent">{result.stats.mean?.toFixed(2) ?? '—'}</span></div>
-          <div className="flex-col flex-center"><span className="t-label">Variance</span><span className="t-mono-small t-accent">{result.stats.variance?.toFixed(2) ?? '—'}</span></div>
-          <div className="flex-col flex-center"><span className="t-label">Skewness</span><span className="t-mono-small t-accent">{result.stats.skewness?.toFixed(2) ?? '—'}</span></div>
+          <div className="flex-col flex-center"><span className="t-label">Mean</span><span className="t-mono-small stat-value">{result.stats.mean?.toFixed(2) ?? '—'}</span></div>
+          <div className="flex-col flex-center"><span className="t-label">Variance</span><span className="t-mono-small stat-value">{result.stats.variance?.toFixed(2) ?? '—'}</span></div>
+          <div className="flex-col flex-center"><span className="t-label">Skewness</span><span className="t-mono-small stat-value">{result.stats.skewness?.toFixed(2) ?? '—'}</span></div>
         </div>
       </>)}
       {result.error && !collapsed && <div className="alert alert--error mt-2"><span>{result.error}</span></div>}
