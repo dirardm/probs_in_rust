@@ -2,7 +2,7 @@
 
 An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the design system of ObligaI.
 
-**[Live demo →](https://oblig.ai)**
+**[Live demo →](https://oblig.ai/probs-in-rust)**
 
 ## Distributions
 
