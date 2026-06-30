@@ -1,6 +1,6 @@
 # Probability Distributions — Rust + WebAssembly
 
-An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the [ObligAI](https://obliga.ai) design system.
+An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the [ObligaI](https://obliga.ai) design system.
 
 **[Live demo →](https://obliga.ai)**
 
@@ -42,7 +42,7 @@ app/                     # Vite + React frontend
 │   │   ├── HelpModal.tsx         # Mathematical reference
 │   │   └── ParamSlider.tsx       # Range slider with KaTeX labels
 │   ├── context/ThemeContext.tsx  # Dark/light mode
-│   ├── obligai.css               # ObligAI design system (27 sections)
+│   ├── obligai.css               # ObligaI design system (27 sections)
 │   └── index.css                 # App-specific additions only
 └── vercel.json
 
@@ -73,7 +73,7 @@ npm run dev
 - **Chart.js** — PDF/PMF curve rendering
 - **KaTeX** — mathematical formula typesetting
 - **Framer Motion** — animations
-- **[ObligAI Design System](https://obliga.ai)** — theming, components, layout
+- **[ObligaI Design System](https://obliga.ai)** — theming, components, layout
 
 ## License
 

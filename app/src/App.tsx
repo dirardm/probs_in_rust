@@ -23,7 +23,7 @@ function WasmIcon() {
 }
 function ObligaiMark() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="48 20 64 58" role="img" aria-label="ObligAI">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="48 20 64 58" role="img" aria-label="ObligaI">
       <line x1="80" y1="46" x2="80" y2="34" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
       <line x1="89" y1="61" x2="99" y2="67" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
       <line x1="71" y1="61" x2="61" y2="67" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
@@ -36,7 +36,7 @@ function ObligaiMark() {
 }
 function ObligaiLogo() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 124" role="img" aria-label="ObligAI">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 124" role="img" aria-label="ObligaI">
       <line x1="80" y1="46" x2="80" y2="34" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
       <line x1="89" y1="61" x2="99" y2="67" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
       <line x1="71" y1="61" x2="61" y2="67" stroke="#B85C3A" strokeWidth="3" strokeLinecap="round"/>
