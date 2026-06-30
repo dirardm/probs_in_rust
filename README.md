@@ -1,6 +1,6 @@
 # Probability Distributions — Rust + WebAssembly
 
-An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the <strong>Obliga<i style="color:#B85C3A">I</i></strong> design system.
+An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the **ObligaI** design system.
 
 **[Live demo →](https://oblig.ai)**
 
@@ -9,46 +9,46 @@ An interactive showcase of **15 probability distributions** computed in Rust via
 ### Continuous (11)
 | Distribution | Parameters | Key Use |
 |---|---|---|
-| **Normal** | μ, σ | Natural phenomena, measurement errors, CLT |
+| **Normal** | μ (mu), σ (sigma) | Natural phenomena, measurement errors, CLT |
 | **Uniform** | a, b | Random number generation, non-informative priors |
-| **Log-Normal** | μ, σ | Stock prices, income distributions |
-| **Exponential** | λ | Waiting times, radioactive decay |
-| **Gamma** | α, β | Rainfall, insurance claims, aggregate waiting |
-| **Beta** | α, β | Proportions, A/B testing, Bayesian conjugate prior |
-| **Weibull** | k, λ | Reliability engineering, survival analysis |
-| **Student's t** | μ, σ, ν | Small-sample inference, robust regression |
-| **Chi-Squared** | k | Goodness-of-fit, variance CIs |
-| **Fisher (F)** | d₁, d₂ | ANOVA, regression significance |
-| **Erlang** | k, λ | Queueing theory, telecom traffic |
+| **Log-Normal** | μ (mu), σ (sigma) | Stock prices, income distributions |
+| **Exponential** | λ (lambda) | Waiting times, radioactive decay |
+| **Gamma** | α (alpha), β (beta) | Rainfall, insurance claims, aggregate waiting |
+| **Beta** | α (alpha), β (beta) | Proportions, A/B testing, Bayesian conjugate prior |
+| **Weibull** | k (shape), λ (scale) | Reliability engineering, survival analysis |
+| **Student's t** | μ, σ, ν (nu) | Small-sample inference, robust regression |
+| **Chi-Squared** | k (df) | Goodness-of-fit, variance confidence intervals |
+| **Fisher (F)** | d1, d2 | ANOVA, regression significance |
+| **Erlang** | k (shape), λ (rate) | Queueing theory, telecom traffic |
 
 ### Discrete (4)
 | Distribution | Parameters | Key Use |
 |---|---|---|
-| **Poisson** | λ | Event counts, website hits, call arrivals |
-| **Geometric** | p | Trials until first success |
-| **Binomial** | n, p | Success counts, quality control |
+| **Poisson** | λ (lambda) | Event counts, website hits, call arrivals |
+| **Geometric** | p (prob) | Trials until first success |
+| **Binomial** | n (trials), p (prob) | Success counts, quality control |
 | **Hypergeometric** | N, K, n | Sampling without replacement, lotteries |
 
 ## Architecture
 
 ```
-app/                     # Vite + React frontend
+app/                          # Vite + React frontend
 ├── src/
-│   ├── wasm/distributions.ts   # Distribution metadata + LaTeX formulas
-│   ├── hooks/useWasmDist.ts    # WASM bridge with debounced compute
+│   ├── wasm/distributions.ts # Distribution metadata + LaTeX formulas
+│   ├── hooks/useWasmDist.ts  # WASM bridge with debounced compute
 │   ├── components/
 │   │   ├── DistributionCard.tsx  # Regulation card with chart + params
 │   │   ├── DistributionModal.tsx # Fullscreen detail view
 │   │   ├── HelpModal.tsx         # Mathematical reference
 │   │   └── ParamSlider.tsx       # Range slider with KaTeX labels
 │   ├── context/ThemeContext.tsx  # Dark/light mode
-│   ├── obligai.css               # Obliga<i style="color:#B85C3A">I</i> design system (27 sections)
+│   ├── obligai.css               # ObligaI design system (27 sections)
 │   └── index.css                 # App-specific additions only
 └── vercel.json
 
-wasm/                    # Rust → WASM crate
+wasm/                          # Rust → WASM crate
 ├── Cargo.toml
-└── src/lib.rs            # 15 distribution PDF/PMF + stats via statrs
+└── src/lib.rs                 # 15 distribution PDF/PMF + stats via statrs
 ```
 
 ## Development
@@ -73,7 +73,7 @@ npm run dev
 - **Chart.js** — PDF/PMF curve rendering
 - **KaTeX** — mathematical formula typesetting
 - **Framer Motion** — animations
-- **Obliga<i style="color:#B85C3A">I</i> Design System** — theming, components, layout
+- **ObligaI** Design System — theming, components, layout
 
 ## License
 
