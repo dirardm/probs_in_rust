@@ -59,7 +59,7 @@
 .sidebar__footer .flex-col { align-items:center; }
 .sidebar__footer .flex-row { justify-content:center; }
 .sidebar:not(.sidebar--expanded) .sidebar-footer-text { display:none; }
-.stat-value { color:var(--reg-color,var(--accent)) !important; }
+.stat-value { color:var(--reg-color,var(--accent)) !important; font:400 11px/1.4 var(--font-mono); }
 .rust-icon > svg { fill:currentColor !important; stroke:none !important; }
 a { color:var(--accent); text-decoration:none; }
 a:hover { color:var(--accent-hover); text-decoration:underline; }
