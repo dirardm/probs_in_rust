@@ -9,25 +9,25 @@ An interactive showcase of **15 probability distributions** computed in Rust via
 ### Continuous (11)
 | Distribution | Parameters | Key Use |
 |---|---|---|
-| **Normal** | μ (mu), σ (sigma) | Natural phenomena, measurement errors, CLT |
-| **Uniform** | a, b | Random number generation, non-informative priors |
-| **Log-Normal** | μ (mu), σ (sigma) | Stock prices, income distributions |
-| **Exponential** | λ (lambda) | Waiting times, radioactive decay |
-| **Gamma** | α (alpha), β (beta) | Rainfall, insurance claims, aggregate waiting |
-| **Beta** | α (alpha), β (beta) | Proportions, A/B testing, Bayesian conjugate prior |
-| **Weibull** | k (shape), λ (scale) | Reliability engineering, survival analysis |
-| **Student's t** | μ, σ, ν (nu) | Small-sample inference, robust regression |
-| **Chi-Squared** | k (df) | Goodness-of-fit, variance confidence intervals |
-| **Fisher (F)** | d1, d2 | ANOVA, regression significance |
-| **Erlang** | k (shape), λ (rate) | Queueing theory, telecom traffic |
+| **Normal** | `μ`, `σ` | Natural phenomena, measurement errors, CLT |
+| **Uniform** | `a`, `b` | Random number generation, non-informative priors |
+| **Log-Normal** | `μ`, `σ` | Stock prices, income distributions |
+| **Exponential** | `λ` | Waiting times, radioactive decay |
+| **Gamma** | `α`, `β` | Rainfall, insurance claims, aggregate waiting |
+| **Beta** | `α`, `β` | Proportions, A/B testing, Bayesian conjugate prior |
+| **Weibull** | `k`, `λ` | Reliability engineering, survival analysis |
+| **Student's t** | `μ`, `σ`, `ν` | Small-sample inference, robust regression |
+| **Chi-Squared** | `k` | Goodness-of-fit, variance confidence intervals |
+| **Fisher (F)** | `d₁`, `d₂` | ANOVA, regression significance |
+| **Erlang** | `k`, `λ` | Queueing theory, telecom traffic |
 
 ### Discrete (4)
 | Distribution | Parameters | Key Use |
 |---|---|---|
-| **Poisson** | λ (lambda) | Event counts, website hits, call arrivals |
-| **Geometric** | p (prob) | Trials until first success |
-| **Binomial** | n (trials), p (prob) | Success counts, quality control |
-| **Hypergeometric** | N, K, n | Sampling without replacement, lotteries |
+| **Poisson** | `λ` | Event counts, website hits, call arrivals |
+| **Geometric** | `p` | Trials until first success |
+| **Binomial** | `n`, `p` | Success counts, quality control |
+| **Hypergeometric** | `N`, `K`, `n` | Sampling without replacement, lotteries |
 
 ## Architecture
 
