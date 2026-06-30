@@ -1,0 +1,65 @@
+/* Chart.js containers — obligai has .chart-container but Chart.js needs specific setup */
+.chart-wrap { height:200px; margin:8px 0; position:relative; }
+.chart-wrap__inner { height:100%; width:100%; }
+.chart-wrap__loading { position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:var(--surface);border-radius:var(--radius); }
+
+/* Range slider — obligai has .input but not range-specific styling */
+.param-range { -webkit-appearance:none;appearance:none;width:100%;height:4px;border-radius:2px;background:var(--surface-high);outline:none;cursor:pointer;margin:2px 0; }
+.param-range::-webkit-slider-thumb { -webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--accent);border:2px solid var(--surface);cursor:pointer; }
+.param-range::-moz-range-thumb { width:16px;height:16px;border-radius:50%;background:var(--accent);border:2px solid var(--surface);cursor:pointer; }
+
+/* Modal wide variant */
+.modal--wide { max-width:900px !important; max-height:90vh; overflow-y:auto; position:relative; }
+.modal--wider { max-width:960px !important; max-height:90vh; overflow-y:auto; position:relative; }
+.modal__close { position:absolute; top:16px; right:16px; }
+[class*="regulation-card--"] { border-color:var(--reg-color,var(--accent-border)) !important; }
+
+/* Modal chart */
+.modal-chart { height:350px;margin:24px 0; }
+
+/* Loading */
+.loading-screen { min-height:100vh; }
+
+/* Sidebar brand: first SVG = mark, second SVG = logo */
+.sidebar__brand > svg:last-child { display:none; }
+.sidebar--expanded .sidebar__brand > svg:first-child { display:none; }
+.sidebar--expanded .sidebar__brand > svg:last-child { display:block; height:auto; width:var(--logo-sm); }
+.sidebar--expanded .sidebar__brand { height:auto; padding-top:12px; padding-bottom:12px; }
+
+/* Sidebar group labels hidden when collapsed */
+.sidebar:not(.sidebar--expanded) .sidebar__group { display:none; }
+.nav-item .icon { color:inherit !important; }
+.nav-item.t-irl { color:var(--color-irl) !important; }
+.nav-item.t-lcr { color:var(--color-lcr) !important; }
+.nav-item.t-nsfr { color:var(--color-nsfr) !important; }
+.nav-item.t-almm { color:var(--color-almm) !important; }
+.nav-item.t-peru { color:var(--color-peru) !important; }
+.nav-item.t-panama { color:var(--color-panama) !important; }
+.nav-item.t-uk-fra { color:var(--color-uk-fra) !important; }
+.nav-item.t-japan-bsr { color:var(--color-japan-bsr) !important; }
+.nav-item.t-singapore-mas { color:var(--color-singapore-mas) !important; }
+.nav-item.t-canada-osfi { color:var(--color-canada-osfi) !important; }
+.nav-item.t-australia-apra { color:var(--color-australia-apra) !important; }
+.nav-item.t-switzerland-finma { color:var(--color-switzerland-finma) !important; }
+
+/* Border matches regulation colour on cards and modals */
+[class*="regulation-card--"] { border-color:var(--reg-color,var(--accent-border)) !important; }
+
+/* Card header alignment */
+.card-header-row { display:flex; align-items:center; gap:var(--space-2); margin-bottom:var(--space-2); }
+.card-header-row .regulation-card__title { margin-top:0; }
+
+/* Content card wrapper */
+.content-card-wrap { max-width:720px; margin:0 auto; }
+
+/* Sidebar footer */
+.sidebar__footer .flex-col { align-items:center; }
+.sidebar__footer .flex-row { justify-content:center; }
+.sidebar:not(.sidebar--expanded) .sidebar-footer-text { display:none; }
+.rust-icon > svg { fill:currentColor !important; stroke:none !important; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { color:var(--accent-hover); text-decoration:underline; }
+.rust-intro { align-items:center; }
+
+/* Formula */
+.formula .katex { font-size:0.85rem; }
