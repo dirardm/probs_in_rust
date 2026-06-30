@@ -1,6 +1,6 @@
 # Probability Distributions — Rust + WebAssembly
 
-An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the **ObligaI** design system.
+An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the <img src="./wordmark.svg" alt="ObligaI" height="24" style="vertical-align:middle"> design system.
 
 **[Live demo →](https://oblig.ai)**
 
@@ -9,14 +9,14 @@ An interactive showcase of **15 probability distributions** computed in Rust via
 ### Continuous (11)
 | Distribution | Parameters | Key Use |
 |---|---|---|
-| **Normal** | `μ`, `σ` | Natural phenomena, measurement errors, CLT |
+| **Normal** | *μ*, *σ* | Natural phenomena, measurement errors, CLT |
 | **Uniform** | `a`, `b` | Random number generation, non-informative priors |
-| **Log-Normal** | `μ`, `σ` | Stock prices, income distributions |
+| **Log-Normal** | *μ*, *σ* | Stock prices, income distributions |
 | **Exponential** | `λ` | Waiting times, radioactive decay |
 | **Gamma** | `α`, `β` | Rainfall, insurance claims, aggregate waiting |
 | **Beta** | `α`, `β` | Proportions, A/B testing, Bayesian conjugate prior |
 | **Weibull** | `k`, `λ` | Reliability engineering, survival analysis |
-| **Student's t** | `μ`, `σ`, `ν` | Small-sample inference, robust regression |
+| **Student's t** | *μ*, *σ*, `ν` | Small-sample inference, robust regression |
 | **Chi-Squared** | `k` | Goodness-of-fit, variance confidence intervals |
 | **Fisher (F)** | `d₁`, `d₂` | ANOVA, regression significance |
 | **Erlang** | `k`, `λ` | Queueing theory, telecom traffic |
@@ -42,7 +42,7 @@ app/                          # Vite + React frontend
 │   │   ├── HelpModal.tsx         # Mathematical reference
 │   │   └── ParamSlider.tsx       # Range slider with KaTeX labels
 │   ├── context/ThemeContext.tsx  # Dark/light mode
-│   ├── obligai.css               # ObligaI design system (27 sections)
+│   ├── obligai.css               # <img src="./wordmark.svg" alt="ObligaI" height="20" style="vertical-align:middle"> design system (27 sections)
 │   └── index.css                 # App-specific additions only
 └── vercel.json
 
@@ -73,7 +73,7 @@ npm run dev
 - **Chart.js** — PDF/PMF curve rendering
 - **KaTeX** — mathematical formula typesetting
 - **Framer Motion** — animations
-- **ObligaI** Design System — theming, components, layout
+- <img src="./wordmark.svg" alt="ObligaI" height="20" style="vertical-align:middle"> Design System — theming, components, layout
 
 ## License
 
