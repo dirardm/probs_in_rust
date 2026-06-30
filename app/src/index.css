@@ -5,8 +5,8 @@
 
 /* Range slider — obligai has .input but not range-specific styling */
 .param-range { -webkit-appearance:none;appearance:none;width:100%;height:4px;border-radius:2px;background:var(--surface-high);outline:none;cursor:pointer;margin:2px 0; }
-.param-range::-webkit-slider-thumb { -webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--accent);border:2px solid var(--surface);cursor:pointer; }
-.param-range::-moz-range-thumb { width:16px;height:16px;border-radius:50%;background:var(--accent);border:2px solid var(--surface);cursor:pointer; }
+.param-range::-webkit-slider-thumb { -webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--reg-color,var(--accent));border:2px solid var(--surface);cursor:pointer; }
+.param-range::-moz-range-thumb { width:16px;height:16px;border-radius:50%;background:var(--reg-color,var(--accent));border:2px solid var(--surface);cursor:pointer; }
 
 /* Modal wide variant */
 .modal--wide { max-width:900px !important; max-height:90vh; overflow-y:auto; position:relative; }
@@ -59,7 +59,7 @@
 .sidebar__footer .flex-col { align-items:center; }
 .sidebar__footer .flex-row { justify-content:center; }
 .sidebar:not(.sidebar--expanded) .sidebar-footer-text { display:none; }
-.stat-value { color:var(--reg-color,var(--accent)) !important; font-weight:600; }
+.stat-value { color:var(--reg-color,var(--accent)) !important; }
 .rust-icon > svg { fill:currentColor !important; stroke:none !important; }
 a { color:var(--accent); text-decoration:none; }
 a:hover { color:var(--accent-hover); text-decoration:underline; }
