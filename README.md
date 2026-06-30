@@ -1,5 +1,5 @@
-<p align="left"><img src="./logo.png" alt="ObligaI" height="75"></p> ## Probability Distributions — Rust + WebAssembly
-
+<p align="left"><img src="./logo.png" alt="ObligaI" height="75"></p> 
+## Probability Distributions — Rust + WebAssembly
 An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the <img src="./wordmark.svg" alt="ObligaI" height="17" style="vertical-align:baseline"> design system.
 
 **[Live demo →](https://oblig.ai)**
