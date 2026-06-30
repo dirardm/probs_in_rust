@@ -1,4 +1,4 @@
-<p align="left"><img src="./logo.png" alt="ObligaI" height="120"></p>
+<p align="left"><img src="./logo.png" alt="ObligaI" height="80"></p>
 
 # Probability Distributions — Rust + WebAssembly
 
