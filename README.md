@@ -1,6 +1,6 @@
 # Probability Distributions — Rust + WebAssembly
 
-An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the <img src="./wordmark.svg" alt="ObligaI" height="16" style="vertical-align:text-bottom"> design system.
+An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the <img src="./wordmark.svg" alt="ObligaI" height="17" style="vertical-align:baseline"> design system.
 
 **[Live demo →](https://oblig.ai)**
 
@@ -10,24 +10,24 @@ An interactive showcase of **15 probability distributions** computed in Rust via
 | Distribution | Parameters | Key Use |
 |---|---|---|
 | **Normal** | *μ*, *σ* | Natural phenomena, measurement errors, CLT |
-| **Uniform** | `a`, `b` | Random number generation, non-informative priors |
+| **Uniform** | *a*, *b* | Random number generation, non-informative priors |
 | **Log-Normal** | *μ*, *σ* | Stock prices, income distributions |
-| **Exponential** | `λ` | Waiting times, radioactive decay |
-| **Gamma** | `α`, `β` | Rainfall, insurance claims, aggregate waiting |
-| **Beta** | `α`, `β` | Proportions, A/B testing, Bayesian conjugate prior |
-| **Weibull** | `k`, `λ` | Reliability engineering, survival analysis |
-| **Student's t** | *μ*, *σ*, `ν` | Small-sample inference, robust regression |
-| **Chi-Squared** | `k` | Goodness-of-fit, variance confidence intervals |
-| **Fisher (F)** | `d₁`, `d₂` | ANOVA, regression significance |
-| **Erlang** | `k`, `λ` | Queueing theory, telecom traffic |
+| **Exponential** | *λ* | Waiting times, radioactive decay |
+| **Gamma** | *α*, *β* | Rainfall, insurance claims, aggregate waiting |
+| **Beta** | *α*, *β* | Proportions, A/B testing, Bayesian conjugate prior |
+| **Weibull** | *k*, *λ* | Reliability engineering, survival analysis |
+| **Student's t** | *μ*, *σ*, *ν* | Small-sample inference, robust regression |
+| **Chi-Squared** | *k* | Goodness-of-fit, variance confidence intervals |
+| **Fisher (F)** | *d₁*, *d₂* | ANOVA, regression significance |
+| **Erlang** | *k*, *λ* | Queueing theory, telecom traffic |
 
 ### Discrete (4)
 | Distribution | Parameters | Key Use |
 |---|---|---|
-| **Poisson** | `λ` | Event counts, website hits, call arrivals |
-| **Geometric** | `p` | Trials until first success |
-| **Binomial** | `n`, `p` | Success counts, quality control |
-| **Hypergeometric** | `N`, `K`, `n` | Sampling without replacement, lotteries |
+| **Poisson** | *λ* | Event counts, website hits, call arrivals |
+| **Geometric** | *p* | Trials until first success |
+| **Binomial** | *n*, *p* | Success counts, quality control |
+| **Hypergeometric** | *N*, *K*, *n* | Sampling without replacement, lotteries |
 
 ## Architecture
 
@@ -42,7 +42,7 @@ app/                          # Vite + React frontend
 │   │   ├── HelpModal.tsx         # Mathematical reference
 │   │   └── ParamSlider.tsx       # Range slider with KaTeX labels
 │   ├── context/ThemeContext.tsx  # Dark/light mode
-│   ├── obligai.css               # <img src="./wordmark.svg" alt="ObligaI" height="16" style="vertical-align:text-bottom"> design system (27 sections)
+│   ├── obligai.css               # <img src="./wordmark.svg" alt="ObligaI" height="17" style="vertical-align:baseline"> design system (27 sections)
 │   └── index.css                 # App-specific additions only
 └── vercel.json
 
@@ -73,7 +73,7 @@ npm run dev
 - **Chart.js** — PDF/PMF curve rendering
 - **KaTeX** — mathematical formula typesetting
 - **Framer Motion** — animations
-- <img src="./wordmark.svg" alt="ObligaI" height="16" style="vertical-align:text-bottom"> Design System — theming, components, layout
+- <img src="./wordmark.svg" alt="ObligaI" height="17" style="vertical-align:baseline"> Design System — theming, components, layout
 
 ## License
 
