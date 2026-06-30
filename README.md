@@ -1,8 +1,8 @@
 # Probability Distributions — Rust + WebAssembly
 
-An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the [Obliga<i>I</i>](https://obliga.ai) design system.
+An interactive showcase of **15 probability distributions** computed in Rust via WebAssembly, rendered with Chart.js and styled with the <strong>Obliga<i style="color:#B85C3A">I</i></strong> design system.
 
-**[Live demo →](https://obliga.ai)**
+**[Live demo →](https://oblig.ai)**
 
 ## Distributions
 
@@ -42,7 +42,7 @@ app/                     # Vite + React frontend
 │   │   ├── HelpModal.tsx         # Mathematical reference
 │   │   └── ParamSlider.tsx       # Range slider with KaTeX labels
 │   ├── context/ThemeContext.tsx  # Dark/light mode
-│   ├── obligai.css               # Obliga<i>I</i> design system (27 sections)
+│   ├── obligai.css               # Obliga<i style="color:#B85C3A">I</i> design system (27 sections)
 │   └── index.css                 # App-specific additions only
 └── vercel.json
 
@@ -73,7 +73,7 @@ npm run dev
 - **Chart.js** — PDF/PMF curve rendering
 - **KaTeX** — mathematical formula typesetting
 - **Framer Motion** — animations
-- **[Obliga<i>I</i> Design System](https://obliga.ai)** — theming, components, layout
+- **Obliga<i style="color:#B85C3A">I</i> Design System** — theming, components, layout
 
 ## License
 
