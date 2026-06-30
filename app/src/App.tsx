@@ -7,8 +7,7 @@ import DistributionCard from './components/DistributionCard';
 import DistributionModal from './components/DistributionModal';
 import HelpModal from './components/HelpModal';
 import markSvg from './assets/mark.svg';
-import logoCompact from './assets/logo_vertical_transparent.svg';
-import { useTheme } from './context/ThemeContext';
+import logoSvg from './assets/logo_vertical_transparent.svg';
 
 function RustIcon() {
   return (
@@ -49,7 +48,7 @@ export default function App() {
       <aside className={`sidebar${sidebarOpen ? ' sidebar--expanded' : ''}`}>
         <div className="sidebar__brand">
           <img src={markSvg} alt="ObligaI" className="sidebar-brand-mark" />
-          <img src={logoCompact} alt="ObligaI" className="sidebar-brand-logo" />
+          <img src={logoSvg} alt="ObligaI" className="sidebar-brand-logo" />
         </div>
         <div className="sidebar__group">Continuous</div>
         <nav className="sidebar__nav">
